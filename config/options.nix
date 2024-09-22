@@ -1,4 +1,5 @@
 {
+options = {
   backup              = false   ; # creates a backup file
   title               = true    ;
   background          = "dark"  ;
@@ -49,3 +50,4 @@
   # iskeyword           = o.iskeyword + "-",        -- hyphenated words recognized by searches and not as a separator
   # shortmess           = o.shortmess + "c"         -- don't give |ins-completion-menu| messages
 };
+}
