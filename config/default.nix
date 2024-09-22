@@ -1,6 +1,8 @@
 {
   imports = [
+    ../plugins
     ./options.nix
-    ./bufferline.nix
+    ./keymaps.nix
+    ./autocmds.nix
   ];
 }
