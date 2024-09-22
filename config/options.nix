@@ -45,7 +45,7 @@
   completeopt         = [ "menuone" "noselect" ];                  # mostly just for cmp
   backspace           = [ "indent" "eol" "start"];
   # clipboard           = o.clipboard + "unnamed,unnamedplus",  -- unnamedplus = allows neovim to access the system clipboard
-  wildmode            = [ "longest" "list" "full" ],         -- Enable autocompletion
+  wildmode            = [ "longest" "list" "full" ];         # Enable autocompletion
   # iskeyword           = o.iskeyword + "-",        -- hyphenated words recognized by searches and not as a separator
   # shortmess           = o.shortmess + "c"         -- don't give |ins-completion-menu| messages
 };
