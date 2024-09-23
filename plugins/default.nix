@@ -4,11 +4,14 @@
   ];
 
   plugins.transparent.enable = true;
+  # extraConfigLua = "g:transparent_enabled";
   extraConfigLua =
     /*
     lua
     */
-    ''vim.g.transparent_enabled'';
+    ''
+      vim.g.transparent_enabled
+    '';
 
   # extraPackages = with pkgs; [
   #   marksman
