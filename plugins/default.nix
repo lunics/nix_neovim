@@ -6,7 +6,8 @@
   plugins.transparent.enable = true;
   # extraConfigLua = "g:transparent_enabled"; KO
 
-  plugins.vim-commentary.enable = true;
+  plugins.commentary.enable = true;
+  plugins.auto-save.enable = true;
 
   # extraPackages = with pkgs; [
   #   marksman
