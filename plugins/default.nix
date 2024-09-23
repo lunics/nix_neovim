@@ -25,7 +25,16 @@
 
   # Not all plugins have modules, so install the others here
   extraPlugins = with pkgs.vimPlugins; [
-    highlight-undo
+    (pkgs.vimUtils.buildVimPlugin {
+      pname = "highlight-undo.nvim";
+      # version = "v0.9.0";
+      src = pkgs.fetchFromGitHub {
+        owner = "tzachar";
+        repo  = "highlight-undo.nvim";
+        # rev = "2234bfa8044dc39a8baf90470747c65e4623a222";
+        # sha256 = "0w5fvqic3qapi9ggfb81nqa9fl6jv831s91r0wgn4d7c35h0340r";
+      };
+    })
   ];
   #  vim-nix
   #  {
