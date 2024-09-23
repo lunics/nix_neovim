@@ -3,11 +3,15 @@
     ./bufferline.nix
   ];
 
-  plugins.transparent.enable = true;
+  plugins = {
+    transparent.enable    = true;
+    commentary.enable     = true;
+    auto-save.enable      = true;
+    nvim-surround.enable  = true;
+    # toggleterm.nvim   manage multiple terminal windows
+  };
   # extraConfigLua = "g:transparent_enabled"; KO
 
-  plugins.commentary.enable = true;
-  plugins.auto-save.enable = true;
 
   # extraPackages = with pkgs; [
   #   marksman
@@ -20,7 +24,9 @@
   # ];
 
   # Not all plugins have modules, so install the others here
-  #extraPlugins = with pkgs.vimPlugins; [
+  extraPlugins = with pkgs.vimPlugins; [
+    highlight-undo.nvim
+  ];
   #  vim-nix
   #  {
   #    plugin = commen-nvim
