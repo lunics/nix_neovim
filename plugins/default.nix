@@ -27,7 +27,7 @@
   extraPlugins = with pkgs.vimPlugins; [
     (pkgs.vimUtils.buildVimPlugin {
       pname = "highlight-undo.nvim";
-      # version = "v0.9.0";
+      version = "v1.0";
       src = pkgs.fetchFromGitHub {
         owner = "tzachar";
         repo  = "highlight-undo.nvim";
