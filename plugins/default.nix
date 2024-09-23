@@ -3,11 +3,18 @@
     ./bufferline.nix
   ];
 
-  plugins = {
-    transparent = {
-      enable = true;
-      config = "vim.g.transparent_enabled"; };
-  };
+  plugins.transparent.enable = true;
+  extraConfigLua = "vim.g.transparent_enabled";
+
+  # extraPackages = with pkgs; [
+  #   marksman
+  #   (nerdfonts.override {
+  #     fonts = [
+  #       "JetBrainsMono"
+  #       "RobotoMono"
+  #     ];
+  #   })
+  # ];
 
   # Not all plugins have modules, so install the others here
   #extraPlugins = with pkgs.vimPlugins; [
