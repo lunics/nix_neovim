@@ -25,7 +25,7 @@
 
   # Not all plugins have modules, so install the others here
   extraPlugins = with pkgs.vimPlugins; [
-    highlight-undo.nvim
+    highlight-undo
   ];
   #  vim-nix
   #  {
