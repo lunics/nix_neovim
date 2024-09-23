@@ -25,14 +25,16 @@
 
   # Not all plugins have modules, so install the others here
   extraPlugins = with pkgs.vimPlugins; [
+    # nix-env -i nix-prefetch
+    # nix-prefetch https://github.com/tzachar/highlight-undo.nvim
     (pkgs.vimUtils.buildVimPlugin {
-      pname = "highlight-undo.nvim";
-      version = "v1.0";
+      pname    = "highlight-undo.nvim";
+      version  = "2024-05-06";
       src = pkgs.fetchFromGitHub {
-        owner = "tzachar";
-        repo  = "highlight-undo.nvim";
-        # rev = "2234bfa8044dc39a8baf90470747c65e4623a222";
-        # sha256 = "0w5fvqic3qapi9ggfb81nqa9fl6jv831s91r0wgn4d7c35h0340r";
+        owner  = "tzachar";
+        repo   = "highlight-undo.nvim";
+        rev    = "1ea1c79372d7d93c88fd97543880927b7635e3d2";
+        sha256 = "1lzml5yj3ak0rc4r2fmb1zpb9a01i5j6yk58m0qn960l2x5kav68";
       };
     })
   ];
