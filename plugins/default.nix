@@ -4,14 +4,9 @@
   ];
 
   plugins.transparent.enable = true;
-  # extraConfigLua = "g:transparent_enabled";
-  extraConfigLua =
-    /*
-    lua
-    */
-    ''
-      vim.g.transparent_enabled
-    '';
+  # extraConfigLua = "g:transparent_enabled"; KO
+
+  plugins.vim-commentary.enable = true;
 
   # extraPackages = with pkgs; [
   #   marksman
