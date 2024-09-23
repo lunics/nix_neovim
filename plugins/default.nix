@@ -4,7 +4,9 @@
   ];
 
   plugins = {
-    transparent.enable = true;
+    transparent = {
+      enable = true;
+      config = "vim.g.transparent_enabled"; };
   };
 
   # Not all plugins have modules, so install the others here
