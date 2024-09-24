@@ -12,7 +12,6 @@
     auto-save.enable      = true;
     nvim-surround.enable  = true;
     spider.enable         = true;
-    bufferline.enable     = true;
     # toggleterm.nvim   manage multiple terminal windows
   };
   # extraConfigLua = "g:transparent_enabled"; KO
