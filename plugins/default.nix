@@ -10,10 +10,12 @@
     commentary.enable     = true;
     auto-save.enable      = true;
     nvim-surround.enable  = true;
+    spider.enable         = true;
+    lualine.enable        = true;
+    bufferline.enable     = true;
     # toggleterm.nvim   manage multiple terminal windows
   };
   # extraConfigLua = "g:transparent_enabled"; KO
-
 
   # extraPackages = with pkgs; [
   #   marksman
