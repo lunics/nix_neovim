@@ -28,5 +28,5 @@
         map = 'redo',
         opts = {}
       },
-      highlight_for_count = true,'';
+      highlight_for_count = true,})'';
 }

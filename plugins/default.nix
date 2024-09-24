@@ -26,10 +26,8 @@
   # ];
 
   # Not all plugins have modules, so install the others here
-  extraPlugins = with pkgs.vimPlugins; [
-    # nix-env -i nix-prefetch
-    # nix-prefetch https://github.com/tzachar/highlight-undo.nvim
-  ];
+  # extraPlugins = with pkgs.vimPlugins; [
+  # ];
   #  vim-nix
   #  {
   #    plugin = commen-nvim
