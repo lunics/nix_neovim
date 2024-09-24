@@ -3,6 +3,7 @@
   imports = [
     ./bufferline.nix
     ./highlight-undo.nix
+    ./lualine.nix
   ];
 
   plugins = {
@@ -11,7 +12,6 @@
     auto-save.enable      = true;
     nvim-surround.enable  = true;
     spider.enable         = true;
-    lualine.enable        = true;
     bufferline.enable     = true;
     # toggleterm.nvim   manage multiple terminal windows
   };
