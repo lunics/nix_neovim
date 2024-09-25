@@ -10,23 +10,24 @@
     'ahmedkhalf/project.nvim',
     'willothy/flatten.nvim',
     'kana/vim-textobj-line',
+    treesitter
 
 
   imports = [
     ./bufferline.nix
     ./highlight-undo.nix
     ./lualine.nix
+    ./transparent.nix
   ];
 
   plugins = {
-    transparent.enable    = true;
     commentary.enable     = true;
     auto-save.enable      = true;
     nvim-surround.enable  = true;
     spider.enable         = true;
     # toggleterm.nvim   manage multiple terminal windows
+    vim-numbertoggle.enable = true;     # turn off relative number when buffer not focused
   };
-  # extraConfigLua = "g:transparent_enabled"; KO
 
   # extraPackages = with pkgs; [
   #   marksman
