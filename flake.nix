@@ -4,7 +4,10 @@
   inputs = {
     nixpkgs.url     = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url      = "github:nix-community/nixvim";
-    flake-parts.url = "github:hercules-ci/flake-parts"; };
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay";
+      inputs.nixpkgs.follows = "nixpkgs"; }; };
 
   outputs =
     { nixvim, flake-parts, ... }@inputs:
