@@ -27,7 +27,7 @@
     nvim-surround.enable  = true;
     spider.enable         = true;
     # toggleterm.nvim   manage multiple terminal windows
-    vim-numbertoggle.enable = true;     # turn off relative number when buffer not focused
+    numbertoggle.enable = true;     # turn off relative number when buffer not focused
   };
 
   # extraPackages = with pkgs; [
