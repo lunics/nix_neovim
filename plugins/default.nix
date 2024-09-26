@@ -1,17 +1,18 @@
 { pkgs, ... }:{
 
-  { 'nvim-tree/nvim-web-devicons', },
-  { 'tpope/vim-abolish', },
-  { 'svban/YankAssassin.vim', },
-  yanky
-    'nacro90/numb.nvim',
-  { 'tommcdo/vim-exchange', },
-  { 'jghauser/mkdir.nvim', },
-    'ahmedkhalf/project.nvim',
-    'willothy/flatten.nvim',
-    'kana/vim-textobj-line',
-    treesitter
+  # { 'nvim-tree/nvim-web-devicons', },
+  # { 'tpope/vim-abolish', },
+  # { 'svban/YankAssassin.vim', },
+  # yanky
+  #   'nacro90/numb.nvim',
+  # { 'tommcdo/vim-exchange', },
+  # { 'jghauser/mkdir.nvim', },
+  #   'ahmedkhalf/project.nvim',
+  #   'willothy/flatten.nvim',
+  #   'kana/vim-textobj-line',
+  #   treesitter
 
+  package = pkgs.neovim-nightly;    # force nixvim to use the nightly version
 
   imports = [
     ./bufferline.nix
