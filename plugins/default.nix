@@ -1,4 +1,4 @@
-{ pkgs, ... }:{
+{ pkgs, inputs, ... }:{
 
   # { 'nvim-tree/nvim-web-devicons', },
   # { 'tpope/vim-abolish', },
@@ -11,8 +11,6 @@
   #   'willothy/flatten.nvim',
   #   'kana/vim-textobj-line',
   #   treesitter
-
-  package = pkgs.neovim-nightly;    # force nixvim to use the nightly version
 
   imports = [
     ./bufferline.nix
