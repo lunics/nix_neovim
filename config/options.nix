@@ -1,5 +1,5 @@
 {
-options = {
+opts = {
   backup              = false   ; # creates a backup file
   title               = true    ;
   background          = "dark"  ;
@@ -9,7 +9,6 @@ options = {
   laststatus          = 0       ;
   showcmd             = false   ;
   cursorline          = true    ; # highlight the current line
-  go                  = "a"     ;
   mouse               = "a"     ; # allow the mouse to be used in neovim
   undofile            = true    ; # enable persistent undo
   updatetime          = 300     ; # faster completion (4000ms default)
