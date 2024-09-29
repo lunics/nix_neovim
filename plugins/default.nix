@@ -3,7 +3,6 @@
   # { 'nvim-tree/nvim-web-devicons', },
   # { 'tpope/vim-abolish', },
   # { 'svban/YankAssassin.vim', },
-  # yanky
   #   'nacro90/numb.nvim',
   # { 'tommcdo/vim-exchange', },
   # { 'jghauser/mkdir.nvim', },
