@@ -1,13 +1,17 @@
 { extraConfigLua = ''
+local augroup = vim.api.nvim_create_augroup
+local autocmd = vim.api.nvim_create_autocmd
 
-vim.api.nvim_create_augroup('view', { clear = true, })
-vim.api.nvim_create_autocmd({ 'BufWinLeave', }, {
+augroup('view', { clear = true, })
+
+autocmd({ 'BufWinLeave', }, {
   group = 'view',
   pattern = '*.*',
   command = 'mkview',
   desc = 'Save cursor position and folds when leaving a buffer',
 })
-vim.api.nvim_create_autocmd({ 'BufWinEnter', }, {
+
+autocmd({ 'BufWinEnter', }, {
   group = 'view',
   pattern = '*.*',
   command = 'silent! loadview',
