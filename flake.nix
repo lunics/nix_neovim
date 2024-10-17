@@ -1,10 +1,11 @@
+# git clone -b neovim lunics.fr:~/nixos /home/lunics/neovim
+# nix run .                     install and run neovim
+# nix run /home/lunics/neovim   open neovim from a separate git clone
 {
-  description = "Nixvim configuration";
-
   inputs = {
     nixpkgs.url     = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url      = "github:nix-community/nixvim";
-    flake-parts.url = "github:hercules-ci/flake-parts"; };
+    flake-parts.url = "github:hercules-ci/flake-parts"; };  # ?
 
   outputs =
     { nixvim, flake-parts, ... }@inputs:
@@ -29,12 +30,9 @@
         in
         {
           checks = {
-            # Run `nix flake check .` to verify that your config is not broken
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           };
-
           packages = {
-            # Lets you run `nix run .` to start nixvim
             default = nvim;
           };
         };
