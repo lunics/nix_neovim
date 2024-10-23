@@ -3,7 +3,8 @@
 
   plugins.transparent.enable = true;
 
-  # extraConfigLua = "g:transparent_enabled"; KO
+  ## needs :TransparentEnable
+
   extraConfigLua = ''
     require('transparent').clear_prefix('BufferLine')
     require('transparent').clear_prefix('NeoTree')

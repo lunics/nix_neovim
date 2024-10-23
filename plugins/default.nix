@@ -10,12 +10,15 @@
   #   'willothy/flatten.nvim',
   #   'kana/vim-textobj-line',
   #   treesitter
+  # https://github.com/akinsho/git-conflict.nvim/
+  # folke/which-key.nvim',
 
   imports = [
     ./bufferline.nix
     ./highlight-undo.nix
     ./lualine.nix
     ./transparent.nix
+    # ./telescope.nix
   ];
 
   plugins = {
