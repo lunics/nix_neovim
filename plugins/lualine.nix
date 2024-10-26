@@ -1,11 +1,13 @@
 {
+  # https://github.com/nvim-lualine/lualine.nvim 6K *
+
   plugins.lualine.enable = true;
 
   extraConfigLua = ''
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = 'auto',
+        theme = 'gruvbox',      -- auto, tokyonight, gruvbox
         component_separators = { left = "", right = ""},
         section_separators = { left = "", right = ""},
         disabled_filetypes = {
@@ -22,10 +24,16 @@
         }
       },
       sections = {
-        lualine_a = {'mode'},
-        lualine_b = {},             -- {'branch', 'diff', 'diagnostics'},
-        lualine_c = { { 'filename', path = 2 } },
-        lualine_x = {},             -- {'encoding', 'fileformat', 'filetype'},
+        -- lualine_a = {'mode'},
+        lualine_a = { { 'filename', path = 2 } },
+        lualine_b = { 'branch' },             -- 'branch', 'diff', 'diagnostics'
+        lualine_c = {},
+        lualine_x = {
+          function()
+            return require('auto-session.lib').current_session_name(true)
+          end
+        },
+        -- lualine_x = {},             -- {'encoding', 'fileformat', 'filetype'},
         lualine_y = {'progress'},
         lualine_z = {}              -- {'location'}
       },
