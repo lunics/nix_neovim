@@ -1,5 +1,8 @@
 {
   # https://github.com/ibhagwan/fzf-lua/
+  # https://github.com/ibhagwan/fzf-lua/blob/main/OPTIONS.md
+  # https://github.com/kazhala/dotfiles/blob/master/.config/nvim/lua/kaz/plugins/fzf-lua.lua
+
 
   ## require plugin nvim-web-devicons
   # Optional dependencies
@@ -32,12 +35,13 @@
         prompt        = " ",
         multiprocess  = true,       -- run command in a separate process
         path_shorten  = true,       -- true = shortened using a built-in algorithm, custom number = if a path is shorter than n characters, it will not be shortened
+        file_icons    = false;
       },
       winopts = {
         fullscreen  = false,
         height      = 0.6,
-        width       = 0.95,
-        row         = 1,    -- 1 = from the bottom, 0.3 = start the fzf window at 30% of the total window height
+        width       = 0.93,
+        row         = 0.99,    -- 1 = from the bottom, 0.3 = start the fzf window at 30% of the total window height
         preview = {
           layout      = "horizontal",
           title       = false,
