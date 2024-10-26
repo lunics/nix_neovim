@@ -7,6 +7,7 @@
     ./transparent.nix
     # ./telescope.nix
     ./fzf-lua.nix
+    # ./yazi.nix
     ./lazygit.nix
     ./better-escape.nix
     # ./trim.nix
