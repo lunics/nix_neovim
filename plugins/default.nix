@@ -9,6 +9,7 @@
     # ./telescope.nix
     ./fzf-lua.nix
 
+    ./lazygit.nix
   ];
 
   # { 'nvim-tree/nvim-web-devicons', },
