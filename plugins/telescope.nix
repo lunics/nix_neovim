@@ -1,15 +1,20 @@
 {
   # https://github.com/nvim-telescope/telescope.nvim/
 
+  ## https://github.com/nix-community/nixvim/tree/main/plugins/by-name/telescope/extensions
+  ## https://github.com/nvim-telescope/telescope-media-files.nvim
+  ## https://github.com/nvim-telescope/telescope-file-browser.nvim
+  ## https://github.com/debugloop/telescope-undo.nvim
+
   plugins.telescope = {
     enable = true;
     extensions = {
-      fzf-native.enable   = true;
-      media-files.enable  = true;
-      ui-select.enable    = true;
       file-browser.enable = true;
       frecency.enable     = true;
+      fzf-native.enable   = true;
       manix.enable        = true;
+      media-files.enable  = true;
+      ui-select.enable    = true;
       undo.enable         = true;
     };
   };
@@ -37,15 +42,30 @@
           i = {
             ["<esc>"] = actions.close,   -- esc for direct exiting finder
             ["<C-c>"] = actions.close,
-            ["<C-j>"] = actions.cycle_history_next,   -- KO
-            ["<C-k>"] = actions.cycle_history_prev,   -- KO
+            ["<C-j>"] = actions.move_selection_next,
+            ["<C-k>"] = actions.move_selection_previous,
             ["<C-u>"] = false,           -- clear prompt
           },
           n = {
           },
         },
+        sorting_strategy = "ascending";
         previewer = true,
         layout_strategy = "flex",
+        layout_config = {
+          prompt_position = "top";
+        };
+        selection_caret = "> ";
+        set_env = {
+          COLORTERM = "truecolor";
+        };
+        file_ignore_patterns = [
+          "^.git/"
+          "^.mypy_cache/"
+          "^__pycache__/"
+          "^output/"
+          "%.ipynb"
+        ];
       },
       pickers = {
       },

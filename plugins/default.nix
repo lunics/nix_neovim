@@ -1,5 +1,16 @@
 { pkgs, inputs, ... }:{
 
+  imports = [
+    ./bufferline.nix
+    ./highlight-undo.nix
+    ./lualine.nix
+    ./transparent.nix
+
+    # ./telescope.nix
+    ./fzf-lua.nix
+
+  ];
+
   # { 'nvim-tree/nvim-web-devicons', },
   # { 'tpope/vim-abolish', },
   # { 'svban/YankAssassin.vim', },
@@ -12,14 +23,6 @@
   #   treesitter
   # https://github.com/akinsho/git-conflict.nvim/
   # folke/which-key.nvim',
-
-  imports = [
-    ./bufferline.nix
-    ./highlight-undo.nix
-    ./lualine.nix
-    ./transparent.nix
-    # ./telescope.nix
-  ];
 
   plugins = {
     commentary.enable     = true;
