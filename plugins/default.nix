@@ -11,6 +11,7 @@
 
     ./lazygit.nix
     ./better-escape.nix
+    # ./trim.nix
   ];
 
   # { 'nvim-tree/nvim-web-devicons', },
