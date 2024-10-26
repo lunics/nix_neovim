@@ -35,4 +35,6 @@
   # https://github.com/akinsho/git-conflict.nvim/
   # folke/which-key.nvim',
   # toggleterm.nvim   manage multiple terminal windows
+  # https://github.com/nat-418/boole.nvim
+  # https://github.com/gerazov/toggle-bool.nvim
 }
