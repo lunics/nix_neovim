@@ -10,6 +10,7 @@
     ./fzf-lua.nix
 
     ./lazygit.nix
+    ./better-escape.nix
   ];
 
   # { 'nvim-tree/nvim-web-devicons', },

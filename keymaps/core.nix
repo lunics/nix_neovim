@@ -56,9 +56,6 @@ map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 --map("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 --map("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
-map("i", "jk", "<ESC>")                     -- press jk fast to exit insert mode
-map("i", "kj", "<ESC>")                     -- press kj fast to exit insert mode
-
 map("n", "<leader>nh", ":nohl<CR>")         -- clear search highlights
 map("n", "x", '"_x')                        -- delete single character without copying into register
 map("n", "<leader>+", "<C-a>")              -- increment
