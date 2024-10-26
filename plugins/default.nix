@@ -5,14 +5,13 @@
     ./highlight-undo.nix
     ./lualine.nix
     ./transparent.nix
-
     # ./telescope.nix
     ./fzf-lua.nix
-
     ./lazygit.nix
     ./better-escape.nix
     # ./trim.nix
     ./auto-session.nix
+    ./flash.nix
   ];
 
   plugins = {
