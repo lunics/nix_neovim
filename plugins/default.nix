@@ -12,6 +12,7 @@
     ./lazygit.nix
     ./better-escape.nix
     # ./trim.nix
+    ./auto-session.nix
   ];
 
   plugins = {
