@@ -1,7 +1,7 @@
 { pkgs, ...}: {
   extraPlugins = with pkgs.vimUtils; [
     # nix-env -i nix-prefetch
-    # nix-prefetch https://github.com/tzachar/highlight-undo.nvim
+    # nix-prefetch-url https://github.com/tzachar/highlight-undo.nvim
     (buildVimPlugin {
       pname = "highlight-undo.nvim";
       version  = "2024-05-06";

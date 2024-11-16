@@ -1,6 +1,3 @@
-# git clone -b neovim lunics.fr:~/nixos /home/lunics/neovim
-# nix run .                     install and run neovim
-# nix run /home/lunics/neovim   open neovim from a separate git clone
 {
   inputs = {
     nixpkgs.url     = "github:nixos/nixpkgs/nixos-unstable";
