@@ -14,7 +14,7 @@
       }; }) ];
 
   extraConfigLua = ''
-    require("smear_cursor").setup({
+    require("smear_cursor").setup {
       opts = {
         -- Smear cursor color. Defaults to Cursor GUI color if not set.
         -- Set to "none" to match the text color at the target cursor position.
@@ -33,6 +33,6 @@
         -- Smears will blend better on all backgrounds.
         legacy_computing_symbols_support = false,
       },
-    })
+    }
   '';
 }

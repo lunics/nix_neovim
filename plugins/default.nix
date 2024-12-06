@@ -1,22 +1,25 @@
 { pkgs, inputs, ... }:{
 
   imports = [
-    ./bufferline.nix
     ./highlight-undo.nix
+    ./transparent.nix
+    ./smear-cursor.nix
 
+    ./bufferline.nix
     ./lualine.nix
     # https://github.com/vim-airline/vim-airline/
 
-    ./transparent.nix
     # ./telescope.nix
     ./fzf-lua.nix
     # ./yazi.nix
-    ./lazygit.nix
+
+    ./flash.nix
     ./better-escape.nix
+
+    ./lazygit.nix
     # ./trim.nix
     ./auto-session.nix
-    ./flash.nix
-    ./smear-cursor.nix
+    ./project.nix
   ];
 
   plugins = {
@@ -29,12 +32,10 @@
 
   # yetone/avante nvim
   # { 'nvim-tree/nvim-web-devicons', },
-  # { 'tpope/vim-abolish', },
-  # { 'svban/YankAssassin.vim', },
   #   'nacro90/numb.nvim',
+  # { 'svban/YankAssassin.vim', },
   # { 'tommcdo/vim-exchange', },
   # { 'jghauser/mkdir.nvim', },
-  #   'ahmedkhalf/project.nvim',
   #   'willothy/flatten.nvim',
   #   'kana/vim-textobj-line',
   #   treesitter
@@ -45,6 +46,9 @@
   # https://github.com/gerazov/toggle-bool.nvim
   # https://github.com/AckslD/nvim-neoclip.lua/
 
-# secondaires
+# 2
+  # { 'tpope/vim-abolish', },
+
+# 3
 # https://github.com/stevearc/aerial.nvim/
 }
