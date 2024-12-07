@@ -9,6 +9,6 @@
         owner  = "nvim-lua";
         repo   = "plenary.nvim";
         rev    = "2d9b06177a975543726ce5c73fca176cedbffe9d";
-        sha256 = "";
+        sha256 = "sha256-bmmPekAvuBvLQmrnnX0n+FRBqfVxBsObhxIEkDGAla4=";
       }; }) ];
 }

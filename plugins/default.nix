@@ -19,8 +19,9 @@
     ./lazygit.nix
     # ./trim.nix
     ./auto-session.nix
-    ./neovim-session-manager.nix
+    # ./neovim-session-manager.nix    # enable if auto-session is not enough
     ./project.nix
+    ./workspaces.nix
 
     ./plenary.nix   # required by neovim-session-manager
   ];
