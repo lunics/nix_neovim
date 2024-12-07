@@ -18,8 +18,9 @@
 
     ./lazygit.nix
     # ./trim.nix
-    ./auto-session.nix
-    # ./neovim-session-manager.nix    # enable if auto-session is not enough
+    ./vim-obsession.nix               # modifies the session files to always autosave after sourcing.
+    # ./auto-session.nix              # Automatically stores sessions in a shared directory
+    # ./neovim-session-manager.nix    # Saves sessions and manages workspaces
     ./project.nix
     ./workspaces.nix
 
