@@ -1,6 +1,8 @@
 { pkgs, ...}: {
   # A simple wrapper around :mksession
 
+  ## REQUIRE plenary.nix
+
   extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin {
       pname    = "neovim-session-manager";

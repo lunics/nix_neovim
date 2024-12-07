@@ -1,5 +1,4 @@
 { pkgs, ...}: {
-
   # animate the cursor with a smear effec
 
   extraPlugins = with pkgs.vimUtils; [

@@ -21,6 +21,8 @@
     ./auto-session.nix
     ./neovim-session-manager.nix
     ./project.nix
+
+    ./plenary.nix   # required by neovim-session-manager
   ];
 
   plugins = {
