@@ -19,6 +19,7 @@
     ./lazygit.nix
     # ./trim.nix
     ./auto-session.nix
+    ./neovim-session-manager.nix
     ./project.nix
   ];
 

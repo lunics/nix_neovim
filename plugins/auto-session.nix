@@ -1,6 +1,6 @@
 {
   # https://github.com/rmagatti/auto-session/
-  #
+
   # :SessionSave my_session       saves a session called `my_session` in `root_dir`
   # :SessionRestore my_session    restores `my_session` from `root_dir`
   # :SessionDelete my_session " deletes `my_sesion` from `root_dir`
