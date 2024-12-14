@@ -3,7 +3,6 @@
   # https://github.com/ibhagwan/fzf-lua/blob/main/OPTIONS.md
   # https://github.com/kazhala/dotfiles/blob/master/.config/nvim/lua/kaz/plugins/fzf-lua.lua
 
-
   ## require plugin nvim-web-devicons
   # Optional dependencies
   #   fd - better find utility
@@ -29,12 +28,12 @@
 
     require('fzf-lua').setup {
       files = {
-        cwd           = "~/.config",
+        cwd           = "~/",
         resume        = false,      -- true = from where you left off
-        previewer     = "builtin",      -- builtin, bat, false
+        previewer     = "bat",      -- builtin, bat, false
         prompt        = " ",
         multiprocess  = true,       -- run command in a separate process
-        path_shorten  = true,       -- true = shortened using a built-in algorithm, custom number = if a path is shorter than n characters, it will not be shortened
+        path_shorten  = 25,         -- true = shortened using a built-in algorithm, custom number = if a path is shorter than n characters, it will not be shortened
         file_icons    = false;
       },
       winopts = {
@@ -47,6 +46,7 @@
           title       = false,
           delay       = 0,
           scrollbar   = false,
+          hidden      = "nohidden",   -- hidden = Display hidden files
           scrollchars = { "▎", "" },
         },
       },
