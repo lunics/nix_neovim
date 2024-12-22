@@ -24,7 +24,7 @@
     ./project.nix
     ./workspaces.nix
 
-    ./plenary.nix   # required by neovim-session-manager
+    ./plenary.nix                     # required by neovim-session-manager
   ];
 
   plugins = {

@@ -44,8 +44,12 @@ opts = {
   # whichwrap         = "bs<>[]hl",  -- allow j and k to travel to prev/next line
   completeopt         = [ "menuone" "noselect" ];                  # mostly just for cmp
   backspace           = [ "indent" "eol" "start"];
-  # clipboard           = o.clipboard + "unnamed,unnamedplus",  -- unnamedplus = allows neovim to access the system clipboard
   wildmode            = [ "longest" "list" "full" ];         # Enable autocompletion
+  clipboard  = {
+    register  = "unnamed,unnamedplus";
+    providers.wl-copy.enable = true;
+    # = "cb";   # TODO need create custom module from https://github.com/nix-community/nixvim/blob/main/modules/clipboard.nix
+  }; # o.clipboard + "unnamed,unnamedplus",  -- unnamedplus = allows neovim to access the system clipboard
   # iskeyword           = o.iskeyword + "-",        -- hyphenated words recognized by searches and not as a separator
   # shortmess           = o.shortmess + "c"         -- don't give |ins-completion-menu| messages
 };
