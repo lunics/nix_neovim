@@ -21,8 +21,9 @@ map("i", "<C-q>",       "<Esc> :qa <CR>")        -- quit from insert mode
 map("n", "<leader>q",   "q")                     -- remap recording @q             KO voir noremap
 map("n", "&",           ":bp <CR>")              -- go to previous buffer
 map("n", "é",           ":bn <CR>")              -- go to next buffer
-map("n", "q",           ":bd <CR> zz")           -- close buffer 
-map("n", "Q",           ":qa <CR>")              -- close neovim
+map("n", "q",           ":bd! <CR> zz")          -- close buffer 
+-- map("n", "q",           ":call CloseOrQuit()<CR> zz")           -- close buffer 
+-- map("n", "Q",           ":wqall! <CR>")           -- q or Q is considered as same Q
 map("n", "<C-w>",       ":bd <CR> zz")           -- close buffer
 map("i", "<C-w> <Esc>", ":bd <CR> zz")           -- close buffer
 map("i", "<Esc>", "<Esc>`^", noremap)            -- prevent the cursor moving back on leaving insert mode

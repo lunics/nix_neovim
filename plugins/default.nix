@@ -25,11 +25,12 @@
     ./workspaces.nix
 
     ./plenary.nix                     # required by neovim-session-manager
-    ./auto-save.nix
+    # ./auto-save.nix
   ];
 
   plugins = {
     commentary.enable     = true;
+    auto-save.enable      = true;
     nvim-surround.enable  = true;
     spider.enable         = true;   # ?
     numbertoggle.enable   = true;   # turn off relative number when buffer not focused

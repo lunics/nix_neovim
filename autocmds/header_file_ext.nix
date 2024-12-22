@@ -1,4 +1,5 @@
 { extraConfigLua = ''
+
 -- header template for each new file .sh
 autocmd(
   "BufNewFile", {
