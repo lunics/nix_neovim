@@ -24,7 +24,7 @@
     ./project.nix
     ./workspaces.nix
 
-    ./plenary.nix                     # required by neovim-session-manager
+    # ./plenary.nix                     # required by neovim-session-manager
     # ./auto-save.nix
   ];
 
@@ -51,6 +51,8 @@
   # https://github.com/nat-418/boole.nvim
   # https://github.com/gerazov/toggle-bool.nvim
   # https://github.com/AckslD/nvim-neoclip.lua/
+  #   age.nvim — Neovim utility for loading encrypted secrets.
+
 
 # 2
   # { 'tpope/vim-abolish', },
