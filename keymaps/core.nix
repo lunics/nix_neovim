@@ -8,28 +8,30 @@ local noremap3 = { noremap = true, silent = true, nowait = true }
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-map("n", "<C-k>",       "<C-y>")                 -- scroll up   in normal mode    KO
-map("n", "<C-j>",       "<C-e>")                 -- scroll down in normal mode    KO
-map("i", "<C-k>",       "<C-x><C-y>", noremap1)  -- scroll up   in insert mode
-map("i", "<C-j>",       "<C-x><C-e>", noremap1)  -- scroll dowb in insert mode
-map("n", "<PageUp>"  ,  "<C-y>")                 -- PageUp   = scroll up   1 line
-map("n", "<PageDown>",  "<C-e>")                 -- PageDown = scroll down 1 line
-map("i", "<PageUp>"  ,  "<C-x><C-y>", noremap1)  -- //
-map("i", "<PageDown>",  "<C-x><C-e>", noremap1)  -- //
+map("n", "<C-k>",       "<C-y>")                  -- scroll up   in normal mode    KO
+map("n", "<C-j>",       "<C-e>")                  -- scroll down in normal mode    KO
+map("i", "<C-k>",       "<C-x><C-y>", noremap1)   -- scroll up   in insert mode
+map("i", "<C-j>",       "<C-x><C-e>", noremap1)   -- scroll dowb in insert mode
+map("n", "<PageUp>"  ,  "<C-y>")                  -- PageUp   = scroll up   1 line
+map("n", "<PageDown>",  "<C-e>")                  -- PageDown = scroll down 1 line
+map("i", "<PageUp>"  ,  "<C-x><C-y>", noremap1)   -- //
+map("i", "<PageDown>",  "<C-x><C-e>", noremap1)   -- //
 
-map("i", "<C-q>",       "<Esc> :qa <CR>")        -- quit from insert mode
-map("n", "<leader>q",   "q")                     -- remap recording @q             KO voir noremap
-map("n", "&",           ":bp <CR>")              -- go to previous buffer
-map("n", "é",           ":bn <CR>")              -- go to next buffer
-map("n", "q",           ":bd! <CR> zz")          -- close buffer 
+-- map("i", "<C-q>",       "<Esc> :qa <CR>")       -- quit from insert mode
+map("n", "<C-q>",       ":wqa <CR>")              -- quit from insert mode
+-- map("n", "<S-q>",       ":wqa <CR>")            -- quit from normal mode
+map("n", "<leader>q",   "q")                      -- remap recording @q             KO voir noremap
+map("n", "&",           ":bp <CR>")               -- go to previous buffer
+map("n", "é",           ":bn <CR>")               -- go to next buffer
+map("n", "q",           ":bd <CR>")               -- close buffer 
 -- map("n", "q",           ":call CloseOrQuit()<CR> zz")           -- close buffer 
--- map("n", "Q",           ":wqall! <CR>")           -- q or Q is considered as same Q
-map("n", "<C-w>",       ":bd <CR> zz")           -- close buffer
-map("i", "<C-w> <Esc>", ":bd <CR> zz")           -- close buffer
-map("i", "<Esc>", "<Esc>`^", noremap)            -- prevent the cursor moving back on leaving insert mode
-map("n", "<C-o>",       ":tabe# <CR>")           -- reopen previously closed buffer
-map("i", "<C-BS>",      "<Esc>cvb")              -- ctrl + backspace = remove word in insert mode
-map("n", "U",           ":redo <CR>")            -- shift U = redo
+-- map("n", "Q",           ":wqall! <CR>")        -- q or Q is considered as same Q
+map("n", "<C-w>",       ":bd <CR> zz")            -- close buffer
+map("i", "<C-w> <Esc>", ":bd <CR> zz")            -- close buffer
+map("i", "<Esc>", "<Esc>`^", noremap)             -- prevent the cursor moving back on leaving insert mode
+map("n", "<C-o>",       ":tabe# <CR>")            -- reopen previously closed buffer
+map("i", "<C-BS>",      "<Esc>cvb")               -- ctrl + backspace = remove word in insert mode
+map("n", "U",           ":redo <CR>")             -- shift U = redo
 
 map({'i','n','v'}, "<Up>"   , "<Nop>", noremap1) -- disable Up arrow in all modes
 map({'i','n','v'}, "<Down>" , "<Nop>", noremap1) -- //
