@@ -1,16 +1,4 @@
-{ pkgs, ...}: {
-  # animate the cursor with a smear effec
-
-  # extraPlugins = with pkgs.vimUtils; [
-  #   (buildVimPlugin {
-  #     pname    = "smear-cursor.nvim";
-  #     version  = "2024-12-06";
-  #     src      = pkgs.fetchFromGitHub {
-  #       owner  = "sphamba";
-  #       repo   = "smear-cursor.nvim";
-  #       rev    = "ee62ace831461704cf3733414820328451e1ead3";
-  #       sha256 = "sha256-Xq1TrpdOx1UF2NlcprCuqSydcL1l9DcAlYvKYC4eNCQ=";
-  #     }; }) ];
+{ pkgs, ...}: { # animate the cursor with a smear effec
 
   extraPlugins = with pkgs.vimPlugins; [
     smear-cursor-nvim

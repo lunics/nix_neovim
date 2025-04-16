@@ -1,6 +1,7 @@
 { pkgs, ...}: {
   # manage workspace directories in neovim
 
+  # no nix pkg
   extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin {
       pname    = "workspaces.nvim";

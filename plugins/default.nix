@@ -1,5 +1,4 @@
 { pkgs, inputs, ... }:{
-
   imports = [
     ./highlight-undo.nix
     ./transparent.nix
@@ -52,6 +51,8 @@
   # https://github.com/gerazov/toggle-bool.nvim
   # https://github.com/AckslD/nvim-neoclip.lua/
   #   age.nvim — Neovim utility for loading encrypted secrets.
+  # https://github.com/pocco81/high-str.nvim
+  #   To create on fly highlighting
 
 
 # 2
